@@ -26,7 +26,7 @@ def root():
     """Render the home page."""
     return render_template('index.html')
     
-@app.route('/', methods=['OPST'])
+@app.route('/', methods=['POST'])
 def create_short_url():
     """Create a new short URL."""
     url = request.form['url']
